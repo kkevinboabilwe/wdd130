@@ -1,13 +1,18 @@
 /* This is a CSS comment */
 /* This is also a comment */
+:root {
+    --image-width: 150px;
+    --heading-background-color: darkblue;
+    --nav-aside-color: white;
+}
 
 nav {
-    background-color: darkblue;
+    background-color: var(--heading-background-color);
     padding: 10px;
 }
 
 nav a {
-    color: white;
+    color: var(--nav-aside-color);
     display: block;
     padding: 20px;
 }
@@ -17,16 +22,16 @@ main {
 }
 
 main img {
-    width: 150px;
+    width: var(--image-width);
     height: auto;
 }
 
 h1 {
-    color: darkblue;
+    color: var(--heading-background-color);
 }
 
 img {
-    width: 150px;
+    width: var(--image-width);
     height: auto;
     border: 1px solid black;
     padding: 2px;
@@ -43,7 +48,7 @@ aside {
     border: 1px solid rgb(0 0 0 / 0.2);
     padding: 1rem;
     background-color: skyblue;
-    color: white;
+    color: var(--nav-aside-color);
     text-align: center;
 }
 
