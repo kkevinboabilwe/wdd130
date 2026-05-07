@@ -1,5 +1,11 @@
 /* This is a CSS comment */
 /* This is also a comment */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --image-width: 150px;
     --heading-background-color: darkblue;
@@ -22,12 +28,19 @@ main {
 }
 
 main img {
+    float: right;
     width: var(--image-width);
     height: auto;
 }
 
 h1 {
     color: var(--heading-background-color);
+}
+
+aside h2 {
+    position: absolute;
+    top: 65px;
+    left: 65px;
 }
 
 img {
@@ -43,11 +56,9 @@ p {
 }
 
 aside {
+    position: relative;
     width: 20rem;
-    margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: skyblue;
     color: var(--nav-aside-color);
     text-align: center;
 }
@@ -61,4 +72,13 @@ footer {
     margin-top: 20px;
     border-top: 1px solid black;
     text-align: center;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: skyblue;
+    color: #000;
 }
