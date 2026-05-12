@@ -23,6 +23,12 @@ nav a {
     padding: 20px;
 }
 
+header,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 main {
     max-width: 840px;
 }
